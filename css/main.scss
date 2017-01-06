@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+$githubUrl: "{{ site.github.url }}";
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "_boilerplate";
 @import "_variables";

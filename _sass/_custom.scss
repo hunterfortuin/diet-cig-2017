@@ -48,7 +48,7 @@ footer {
 .linen-background {
 	margin-top: 40px;
 	text-align: center;
-	background-image: url('/images/background-texture.png');
+	background-image: url($githubUrl + "/images/background-texture.png");
 	background-size: cover;
 	min-height: 440px;
 }
@@ -59,7 +59,7 @@ footer {
 
 // Home Page Code
 .home-wrapper {
-	background-image: url('/images/home-splash.jpg');
+	background-image: url($githubUrl + "/images/home-splash.jpg");
 	background-position: calc(8% - 50px) 8%;
 	background-size: cover;
 	height: 480px;
