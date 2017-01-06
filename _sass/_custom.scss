@@ -1,24 +1,66 @@
-html { /* Set box-sizing to border-box to preserve sanity */
-  box-sizing: border-box;
+// Header Code
+.header { background-color: #4059B3; }
+.header .header-left { float: right; }
+.header .header-left a {
+	padding-right: 0;
+	padding-left: 50px;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+.header .header-right {	float: left; }
+.header .header-right a {
+	padding-left: 0;
+	padding-right: 50px;
+}
+.header a { color: #fff; }
+.header a:hover { background: none; }
+.header .pure-menu-list { margin-top: 20px; }
+.header .center-image {
+	width: 100%;
+	text-align: center;
+	padding-right: 0;
+	padding-left: 0;
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+// Footer Code
+footer {
+	text-align: center;
+	background-color: #4059B3;
+}
+.footer-symbol {
+	font-size: 50px;
+	color: #EE9792;
+}
+.footer-link {
+	text-decoration: none;
 }
 
-img { /* Hello images, welcome to 2016 */
-  height: auto;
-  max-width: 100%;
-  vertical-align: middle;
+// All Page Code
+.page-wrapper {
+	background: #fff; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#ECE9E6, #FFFFFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#ECE9E6, #FFFFFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#ECE9E6, #FFFFFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#ECE9E6, #FFFFFF); /* Standard syntax */
+}
+.page-wrapper img {
+	margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, p {
-	margin-top: 0;
-	margin-bottom: 0;
+.linen-background {
+	margin-top: 40px;
+	text-align: center;
+	background-image: url('/images/background-texture.png');
+	background-size: cover;
+	min-height: 440px;
 }
 
-strong { font-weight: 900; }
+.linen-background h1 {
+	margin-top: 20px;
+}
+
+// Home Page Code
+.home-wrapper {
+	background-image: url('/images/home-splash.jpg');
+	background-position: calc(8% - 50px) 8%;
+	background-size: cover;
+	height: 480px;
+}

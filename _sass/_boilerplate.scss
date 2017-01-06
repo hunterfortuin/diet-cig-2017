@@ -1,0 +1,61 @@
+html { /* Set box-sizing to border-box to preserve sanity */
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+img { /* Hello images, welcome to 2016 */
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+h1, h2, h3, h4, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+strong { font-weight: 900; }
+
+// Font Setup
+@font-face {
+	font-family: 'Mono Social Icons Font';
+	src: url('MonoSocialIconsFont-1.10.eot');
+	src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+		url('MonoSocialIconsFont-1.10.woff') format('woff'),
+		url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+		url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+		src: url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.pure-g [class*=pure-u] {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.symbol, a.symbol:before {
+	font-family: 'Mono Social Icons Font';
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+a.symbol:before {
+	content: attr(title);
+	margin-right: 0.3em;
+	font-size: 300%;
+}
