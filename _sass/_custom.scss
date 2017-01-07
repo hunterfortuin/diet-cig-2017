@@ -140,7 +140,8 @@ footer {
 	margin-top: 40px;
 	text-align: center;
 	background-image: url($githubUrl + "/images/background-texture.png");
-	background-size: cover;
+	background-size: 100%;
+	background-repeat: repeat-y;
 	min-height: 440px;
 }
 
