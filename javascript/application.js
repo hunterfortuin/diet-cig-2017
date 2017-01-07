@@ -1,7 +1,23 @@
 $(document).ready(function() {
+	redirectToSplashPage();
 	initializeDropdown();
 	initializeResizeListener();
 });
+
+function redirectToSplashPage() {
+	var cookieName = 'splash-page-cookie';
+	var cookie = Cookies.get(cookieName);
+
+	if (cookie == null) {
+		Cookies.set(cookieName, 1, { expires: 1 });
+
+		if (window.location.hostname === 'localhost') {
+			window.location = "/splash";
+		} else {
+			window.location = "/diet-cig-2017/splash";
+		}
+	}
+}
 
 function initializeResizeListener() {
 	if ($(window).width() >= 768) {

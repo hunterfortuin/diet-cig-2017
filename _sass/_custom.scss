@@ -1,3 +1,23 @@
+// Splash Page
+.splash-link { text-decoration: none; }
+.splash-header {
+	background-color: #4059B3;
+	height: 65px;
+}
+.splash-header h1 {
+	padding: 13px;
+	color: #EE9792;
+}
+.splash-wrapper {
+	background-image: url($githubUrl + "/images/background-texture.png");
+	background-size: cover;
+	min-height: 600px;
+}
+.splash-header ul {
+	position: absolute;
+	right: 20px;
+}
+
 // Header Code
 .header { background-color: #4059B3; }
 .header .header-left { float: right; }
@@ -138,5 +158,10 @@ footer {
 
 // Music Page Code
 .spotify-widget {
+	margin-top: 20px;
+}
+
+// Videos Page Code
+.videos {
 	margin-top: 20px;
 }
