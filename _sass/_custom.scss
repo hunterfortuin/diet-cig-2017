@@ -112,6 +112,9 @@ footer {
 .page-wrapper img {
 	margin-bottom: 20px;
 }
+.page-wrapper a {
+  color: #4059B3;
+}
 
 .linen-background {
 	margin-top: 40px;
@@ -131,4 +134,9 @@ footer {
 	background-position: calc(8% - 50px) 8%;
 	background-size: cover;
 	height: 480px;
+}
+
+// Music Page Code
+.spotify-widget {
+	margin-top: 20px;
 }
