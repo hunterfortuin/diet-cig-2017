@@ -5,15 +5,20 @@ $(document).ready(function() {
 });
 
 function redirectToSplashPage() {
-	if (sessionStorage.getItem('splash') !== 'true') {
-    sessionStorage.setItem('splash','true');
+	try {
+		if (sessionStorage.getItem('splash') !== 'true') {
+			sessionStorage.setItem('splash','true');
 
-		if (window.location.hostname === 'localhost') {
-			window.location = "/splash";
-		} else {
-			window.location = "/diet-cig-2017/splash";
+			if (window.location.hostname === 'localhost') {
+				window.location = "/splash";
+			} else {
+				window.location = "/diet-cig-2017/splash";
+			}
 		}
-  }
+	} catch (e) {
+		console.log('REDIRECT FAILED');
+		console.log(e);
+	}
 }
 
 function initializeResizeListener() {
