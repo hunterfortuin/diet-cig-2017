@@ -5,18 +5,15 @@ $(document).ready(function() {
 });
 
 function redirectToSplashPage() {
-	var cookieName = 'splash-page-cookie';
-	var cookie = Cookies.get(cookieName);
-
-	if (cookie == null) {
-		Cookies.set(cookieName, 1, { expires: 1 });
+	if (sessionStorage.getItem('splash') !== 'true') {
+    sessionStorage.setItem('splash','true');
 
 		if (window.location.hostname === 'localhost') {
 			window.location = "/splash";
 		} else {
 			window.location = "/diet-cig-2017/splash";
 		}
-	}
+  }
 }
 
 function initializeResizeListener() {
