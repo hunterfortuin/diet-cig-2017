@@ -37,7 +37,11 @@ strong { font-weight: 900; }
 }
 
 .pure-g [class*=pure-u] {
-	font-family: 'Roboto', sans-serif !important;
+	font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+.pure-g [class*=pure-u] h1 {
+	font-weight: 400;
 }
 
 .symbol, a.symbol:before {

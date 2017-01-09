@@ -143,7 +143,7 @@ footer {
 	background-image: url($githubUrl + "/images/background-texture.png");
 	background-size: 100%;
 	background-repeat: repeat-y;
-	min-height: 440px;
+	min-height: 500px;
 }
 
 .linen-background h1 {
@@ -155,7 +155,7 @@ footer {
 	background-image: url($githubUrl + "/images/home-splash.jpg");
 	background-position: calc(8% - 50px) 8%;
 	background-size: cover;
-	height: 480px;
+	min-height: 550px;
 }
 
 // Music Page Code
