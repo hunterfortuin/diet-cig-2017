@@ -123,12 +123,15 @@ footer {
 
 // All Page Code
 .page-wrapper {
-	background: #fff; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Firefox 3.6 to 15 */
-	background: -ms-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%);
-	background: linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* Standard syntax */
+	background-image: url($githubUrl + "/images/background-confetti.png");
+	background-size: 100%;
+	background-repeat: repeat-y;
+	// background: #fff; /* For browsers that do not support gradients */
+	// background: -webkit-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Safari 5.1 to 6.0 */
+	// background: -o-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Opera 11.1 to 12.0 */
+	// background: -moz-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Firefox 3.6 to 15 */
+	// background: -ms-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%);
+	// background: linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* Standard syntax */
 }
 .page-wrapper img {
 	margin-bottom: 20px;
