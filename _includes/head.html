@@ -6,6 +6,13 @@
 	<title>{% if page.title %}Diet Cig | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | truncate: 160 }}{% endif %}">
 
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.github.url }}/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="{{ site.github.url }}/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{ site.github.url }}/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="{{ site.github.url }}/manifest.json">
+	<link rel="mask-icon" href="{{ site.github.url }}/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
