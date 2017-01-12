@@ -9,7 +9,7 @@
 	color: #EE9792;
 }
 .splash-wrapper {
-	background-image: url($githubUrl + "/images/background-texture.png");
+	background-image: url($githubUrl + "/images/background-texture.jpg");
 	background-size: cover;
 	min-height: 600px;
 }
@@ -126,12 +126,6 @@ footer {
 	background-image: url($githubUrl + "/images/background-confetti.png");
 	background-size: 100%;
 	background-repeat: repeat-y;
-	// background: #fff; /* For browsers that do not support gradients */
-	// background: -webkit-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Safari 5.1 to 6.0 */
-	// background: -o-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Opera 11.1 to 12.0 */
-	// background: -moz-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* For Firefox 3.6 to 15 */
-	// background: -ms-linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%);
-	// background: linear-gradient(-90deg, #DDDBE0 0%, #E8E8EA 51%, #DEDBE0 100%); /* Standard syntax */
 }
 .page-wrapper img {
 	margin-bottom: 20px;
@@ -143,7 +137,7 @@ footer {
 .linen-background {
 	margin-top: 40px;
 	text-align: center;
-	background-image: url($githubUrl + "/images/background-texture.png");
+	background-image: url($githubUrl + "/images/background-texture.jpg");
 	background-size: 100%;
 	background-repeat: repeat-y;
 	min-height: 500px;

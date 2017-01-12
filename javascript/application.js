@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	// redirectToSplashPage();
+	redirectToSplashPage();
 	initializeDropdown();
 	initializeResizeListener();
 });

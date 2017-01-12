@@ -4,21 +4,4 @@ permalink: /
 ---
 
 <div class="home-wrapper">
-	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content video-wrapper">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/oynD7Mrqu_o" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
 </div>
-
-<script>
-	$(document).ready(function() {
-		$('.modal').modal('toggle');
-
-		$(".modal").on('hidden.bs.modal', function (e) {
-			$(".modal iframe").attr("src", $(".modal iframe").attr("src"));
-		});
-	});
-</script>
