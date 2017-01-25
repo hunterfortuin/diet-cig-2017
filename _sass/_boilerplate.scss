@@ -8,6 +8,9 @@ html { /* Set box-sizing to border-box to preserve sanity */
 body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 img { /* Hello images, welcome to 2016 */
@@ -74,4 +77,8 @@ a.symbol:before {
 
 .margin-bottom {
 	margin-bottom: 10px;
+}
+
+.site-wrapper {
+	flex: 1;
 }
