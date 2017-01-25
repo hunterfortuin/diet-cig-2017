@@ -200,3 +200,17 @@ footer {
 .shopify-container {
 	margin-top: 40px;
 }
+
+// On Mobile
+@media (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
+}
+
+// On Desktop
+@media (min-width: 768px) {
+	.mobile {
+		display: none;
+	}
+}

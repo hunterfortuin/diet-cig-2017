@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	redirectToSplashPage();
 	initializeDropdown();
-	initializeResizeListener();
 });
 
 function redirectToSplashPage() {
@@ -15,26 +14,6 @@ function redirectToSplashPage() {
 		console.log('REDIRECT FAILED');
 		console.log(e);
 	}
-}
-
-function initializeResizeListener() {
-	if ($(window).width() >= 768) {
-		$('.desktop').removeClass('hidden');
-		$('.mobile').addClass('hidden');
-	} else {
-		$('.desktop').addClass('hidden');
-		$('.mobile').removeClass('hidden');
-	}
-
-	$(window).resize(function() {
-		if ($(window).width() >= 768) {
-			$('.desktop').removeClass('hidden');
-			$('.mobile').addClass('hidden');
-		} else {
-			$('.desktop').addClass('hidden');
-			$('.mobile').removeClass('hidden');
-		}
-	});
 }
 
 function initializeDropdown() {
