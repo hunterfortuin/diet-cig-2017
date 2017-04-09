@@ -9,7 +9,7 @@ ruby '2.3.0'
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.3.1"
+gem "jekyll", "3.4.3"
 
 require 'json'
 require 'open-uri'
