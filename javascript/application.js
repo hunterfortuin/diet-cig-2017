@@ -5,10 +5,10 @@ $(document).ready(function() {
 
 function redirectToSplashPage() {
 	try {
-		if (sessionStorage.getItem('splash') !== 'true') {
-			sessionStorage.setItem('splash','true');
+		if (sessionStorage.getItem('tour') !== 'true') {
+			sessionStorage.setItem('tour','true');
 
-			window.location = "/splash";
+			window.location = "/tour";
 		}
 	} catch (e) {
 		console.log('REDIRECT FAILED');

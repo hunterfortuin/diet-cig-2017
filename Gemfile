@@ -9,7 +9,7 @@ ruby '2.3.0'
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.4.3"
+gem "jekyll", "3.5.2"
 
 require 'json'
 require 'open-uri'
@@ -24,4 +24,5 @@ gem 'github-pages', versions['github-pages']
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
+	gem 'jekyll-redirect-from'
 end
