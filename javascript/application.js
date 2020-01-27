@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	redirectToSplashPage();
+	redirectToTourPage();
 	initializeDropdown();
 });
 
-function redirectToSplashPage() {
+function redirectToTourPage() {
 	try {
 		if (sessionStorage.getItem('tour') !== 'true') {
 			sessionStorage.setItem('tour','true');
