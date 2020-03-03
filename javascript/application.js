@@ -1,14 +1,14 @@
 $(document).ready(function() {
-	redirectToTourPage();
+	redirectToSplashPage();
 	initializeDropdown();
 });
 
-function redirectToTourPage() {
+function redirectToSplashPage() {
 	try {
-		if (sessionStorage.getItem('tour') !== 'true') {
-			sessionStorage.setItem('tour','true');
+		if (sessionStorage.getItem('splash') !== 'true') {
+			sessionStorage.setItem('splash','true');
 
-			window.location = "/tour";
+			window.location = "/splash";
 		}
 	} catch (e) {
 		console.log('REDIRECT FAILED');
