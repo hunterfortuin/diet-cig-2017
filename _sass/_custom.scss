@@ -1,25 +1,28 @@
 // Splash Page
 .splash-link { text-decoration: none; }
 .splash-header {
-	background-color: #163723;
 	height: 65px;
 }
 .splash-header h1 {
 	padding: 13px;
 	color: #87AAC5;
 }
-.splash-wrapper {
-	background-image: url($githubUrl + "/images/background-texture.jpg");
-	background-size: cover;
-	min-height: 600px;
+/*.splash-wrapper {
+	min-height: 500px;
+}*/
+.splash-wrapper h1, .splash-wrapper h2 {
+	color: #ffffff;
+	text-align: center;
 }
 .splash-header ul {
 	position: absolute;
 	right: 20px;
 }
+.negative-margin {
+	margin-top: -10px;
+}
 
 // Header Code
-.header { background-color: #163723; }
 .header .header-left { float: right; }
 .header .header-left a {
 	padding-right: 0;
@@ -110,20 +113,25 @@
 
 // Footer Code
 footer {
+	padding: 10px;
 	text-align: center;
-	background-color: #163723;
 }
 .footer-symbol {
 	font-size: 50px;
-	color: #87AAC5;
+	color: #ffffff;
 }
 .footer-link {
 	text-decoration: none;
 }
 
 // All Page Code
+.background {
+	background-image: url($githubUrl + "/images/do-you-wonder-background.jpg");
+	background-size: 100%;
+	background-repeat: repeat-y;
+}
 .page-wrapper {
-	background-color: #163723;
+
 }
 .page-wrapper img {
 	margin-bottom: 20px;
@@ -133,6 +141,7 @@ footer {
 }
 
 .main-container {
+	border-radius: 25px;
 	margin-top: 40px;
 	text-align: center;
 	background-image: url($githubUrl + "/images/background-texture.jpg");
@@ -151,6 +160,14 @@ footer {
 	background-position: center top;
 	background-size: cover;
 	min-height: 900px;
+}
+
+// Mobile
+@media (max-width: 768px) {
+	.home-wrapper {
+		background-position: right -100px top;
+		min-height: 600px;
+	}
 }
 
 // Music Page Code

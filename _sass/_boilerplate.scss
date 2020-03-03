@@ -14,9 +14,14 @@ body {
 }
 
 img { /* Hello images, welcome to 2016 */
-	height: auto;
 	max-width: 100%;
 	vertical-align: middle;
+}
+img.auto-height {
+	height: auto;
+}
+.header img {
+	width: auto;
 }
 
 h1, h2, h3, h4, p {
@@ -81,5 +86,8 @@ a.symbol:before {
 
 .site-wrapper {
 	flex: 1;
-	background-color: #163723;
+}
+
+.l-box {
+	padding: 1em;
 }
