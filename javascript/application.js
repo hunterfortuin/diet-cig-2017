@@ -144,8 +144,13 @@ function determineStoreLink() {
 
 			if (eu_country_codes.includes(response.countryCode))
 			{
-				$("#js-store-link").attr("href", "https://dietcig.terriblemerch.com/");
+				var uk_store_link = "https://dietcig.terriblemerch.com/";
+				$("#js-store-link").attr("href", uk_store_link);
 				$("#js-store-link").attr("target", "_blank");
+
+				if (window.location.pathname.indexOf("/store") != -1) { // we are on the wtore page
+					window.location = uk_store_link;
+				}
 			}
 		},
 		function fail(data, status) {
